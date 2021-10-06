@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="600.0" style="-fx-background-color: #2F0C3A;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="media_player.Welcome_PageController">
+   <children>
+      <ImageView fitHeight="536.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="43.0">
+         <image>
+            <Image url="@../images/welcome.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="212.0" text="TingTong Media Player" textFill="#b9ff0f">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="63.0" prefHeight="29.0" prefWidth="563.0" text="You can use premium account using your E-mail" textFill="#e39e14">
+         <font>
+            <Font name="Times New Roman Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="premium" layoutX="244.0" layoutY="181.0" mnemonicParsing="false" onAction="#premiumButton" prefHeight="54.0" prefWidth="135.0" style="-fx-background-color: darkred;" text="Premium" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="general" layoutX="244.0" layoutY="316.0" mnemonicParsing="false" onAction="#generalButton" prefHeight="54.0" prefWidth="135.0" style="-fx-background-color: cyan;" text="General" textFill="#da0404">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="118.0" prefHeight="29.0" prefWidth="563.0" text="* Using premium account you can create your own playlist....." textFill="#e39e14">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="161.0" layoutY="260.0" prefHeight="29.0" prefWidth="301.0" text="Else you can go with our general zone" textFill="#e39e14">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="531.0" layoutY="13.0" mnemonicParsing="false" onAction="#donate" style="-fx-background-color: lightgreen;" text="Donate" textFill="#00008bfc">
+         <font>
+            <Font name="Times New Roman Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
